@@ -49,6 +49,10 @@ form{
     border-radius: 0px 11px 11px 0px;
 }
 
+.search-icon:active{
+    background-color: #7890ba;
+  }
+
 input{
     all: unset;
     font: 15px system-ui;
