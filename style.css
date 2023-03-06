@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #131720;
+    font-family: sans-serif;
+}
+
+h3{
+    color: white;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #131720;
+    padding: 10px;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.topnav .search-container{
+    float: right;
+}
+
+form{
+    background-color: #151f30;
+    width: 300px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon{
+    all: unset;
+    text-align: center;
+    background-color: #40557a;
+    height: 100%;
+    width: 20%;
+    border-radius: 0px 11px 11px 0px;
+}
+
+input{
+    all: unset;
+    font: 15px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+}
+
+.thumbnail{
+    /* height: 300px; */
+    width: 100%;
+    border-radius: 19px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start
+}
+
+.row{
+    width: 25%;
+}
+
+.column{
+    float: left;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.card{
+    background-color: #151f30;
+    border-radius: 19px;
+    padding: 15px;
+    text-align: center;
+}
+
+.intro{
+    color:-webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.img_box{
+    border-radius: 10px;
+    /* padding: 10px; */
+    background-color: rgb(233, 241, 255);
+    display: none;
+    position: fixed;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#img{
+    width: 100%;
+}
+
+#description{
+    margin: 15px;
+}
+
+.toggle{
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background: url(close.png);
+    background-size: 40px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .thumbnail{
+        height: 250px;
+    }
+    
+    .row{
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .topnav a{
+        font-size: 1rem;
+    }
+    .thumbnail{
+        height: 200px;
+    }
+    
+    form{
+        width: 150px;
+    }
+
+    .search-icon{
+        width: 30%;
+    }
+
+    .row{
+        width: 48%;
+    }
+
+    .card{
+        padding: 8px;
+    }
+    
+    h3{
+        font-size: 1rem;
+    }
+
+    .toggle{
+        height: 30px;
+        width: 30px;
+        background-size: 25px;
+    }
+
+    .img_box{
+        left: 10%;
+        transform: translate(-5%,-50%);
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoviesApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#">Movies Site</a>
+      <div class="search-container">
+        <form role="search" id="form">
+          <input type="search" id="query" name="q" autocomplete="on" placeholder="Search.." />
+          <button class="search-icon">🔍</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="img_box" id="img_bg" >
+        <div class="toggle" onclick="close_introCard()"></div>
+        <img id="img" src="https://wmdb.querydata.org/movie/poster/1605355459683-5f968bfaee3680299115bb97.png"/>
+        <div id="description">测试描述1111222</div>
+    </div>
+    <div style="padding-left: 16px">
+    <section id="section">
+      <!-- <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images.jpg" class="thumbnail" />
+            <h3 id="title">影名<br><a class="intro" onclick="show_introCard()">简介</a></h3>
+          </div>
+        </div>
+      </div> -->
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
