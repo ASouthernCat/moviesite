@@ -12,9 +12,16 @@ h3{
 }
 
 .topnav{
+    position: fixed;
     overflow: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: initial;
     background-color: #131720;
+    box-shadow: 0 -1px 4px rgb(216, 215, 215);;
     padding: 10px;
+    padding-top: 20px;
 }
 .topnav a{
     float: left;
@@ -29,6 +36,7 @@ h3{
 
 .topnav .search-container{
     float: right;
+  margin-right: 15px;
 }
 
 form{
@@ -48,10 +56,22 @@ form{
     width: 20%;
     border-radius: 0px 11px 11px 0px;
 }
-
 .search-icon:active{
-    background-color: #7890ba;
-  }
+  background-color: #7890ba;
+}
+
+.search-icon-vip{
+    all: unset;
+    text-align: center;
+    background-color: #47ff47;
+    height: 100%;
+    width: 20%;
+    border-radius: 11px;
+}
+
+.search-icon-vip:active{
+  background-color: #1e671e;
+}
 
 input{
     all: unset;
@@ -71,7 +91,8 @@ input{
 section{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start
+    align-items: flex-start;
+    padding: 5rem 0;
 }
 
 .row{
@@ -132,6 +153,39 @@ section{
     cursor: pointer;
 }
 
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+	font-size:0.5rem;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+.pagination-div{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 @media screen and (max-width:1024px){
     .thumbnail{
         height: 250px;
@@ -155,6 +209,10 @@ section{
     }
 
     .search-icon{
+        width: 30%;
+    }
+
+    .search-icon-vip{
         width: 30%;
     }
 
