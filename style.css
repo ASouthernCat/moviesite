@@ -88,7 +88,8 @@ section{
 }
 
 .intro{
-    color:-webkit-link;
+    color: gray;
+    font-size: 0.8rem;
     cursor: pointer;
     text-decoration: underline;
 }
