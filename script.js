@@ -64,7 +64,7 @@ form.addEventListener("submit",(e) =>{
     const searchItem = search.value;
     if(searchItem){
         returnMovies(SEARCHAPI+searchItem);
-        search.value = "";
+        // search.value = "";
     }
     else
     returnMovies(APILINK);
