@@ -105,8 +105,9 @@ function returnMovies(url) {
 }
 
 function searchMovies(name){
-              window.open("https://www.pkmp4.xyz/vs/-------------.html?wd=" + name);
-            window.open("https://www.555dyy5.com/vodsearch/-------------.html?wd=" + name);
+  window.open("https://v.qq.com/x/search/?q="+name);
+  window.open("https://www.pkmp4.xyz/vs/-------------.html?wd=" + name);
+  window.open("https://www.555dyy5.com/vodsearch/-------------.html?wd=" + name);
 }
 
 form.addEventListener("submit", (e) => {
@@ -115,10 +116,17 @@ form.addEventListener("submit", (e) => {
   const searchItem = search.value;
   if (searchItem) {
     returnMovies(SEARCHAPI + searchItem);
+    document.querySelector(".pagination-div").classList.add('pagination-none');
+    document.querySelector(".top-title").classList.add('top-none');
     // search.value = "";
   }
-  else
+  else{
+    document.querySelector(".pagination-div").classList.remove('pagination-none');
+    document.querySelector(".top-title").classList.remove('top-none');
+    disActive();
+    page[1].classList.add('active');
     returnMovies(APILINK);
+  }
 });
 
 document.querySelector('.search-icon-vip').addEventListener("click",()=>{
